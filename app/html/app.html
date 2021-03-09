@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Youtube Download</title>
+</head>
+<body>
+    <div id="app_container">
+        <div class="title">
+            <div class="title_container">
+                <div class="logo_container">
+                    <img src="../img/youtube-6-64.png" alt="">
+                </div>
+                <div class="text_title">Youtube Download</div>
+            </div>
+
+            <div class="subtitle">
+                Faça downloads de videos e audios do youtube, rápido e facil de usar.
+            </div>
+        </div>
+
+        <div class="path_container">
+            <label class="labels">Salvar:</label>
+            <input type="text" class="path_input" readonly placeholder="Selecione uma pasta para salvar seus downloads...">
+            <button class="select_folder">Localizar</button>
+        </div>
+
+        <div class="url_container">
+            <label class="labels">Link :</label>
+            <input type="text" class="inputs" placeholder="Cole o link do seu video aqui" id="video_url">
+            <select class="format">
+                <option value="error">Formato</option>
+                <option value=".mp4">MP4 (Video)</option>
+                <option value=".mp3">MP3 (Audio)</option>
+            </select>
+            <img src="../img/question-mark-24.png" id="format_icon">
+        </div>
+
+        <div class="button_container">
+            <div class="button_btn" id="btn_download">
+                <div class="icon_btn"><img src="../img/download-24.png"></div>
+                <div class="text_btn">Baixar</div>
+            </div>
+        </div>
+
+        <div class="last_downloads">
+            <div class="title_last">Ultimo Download Realizado:</div>
+            <div class="info_last">
+                <div class="info_box">
+                    <label class="info_label">Titulo:</label>
+                    <label class="info_label_text" id="title_info"></label>
+                </div>
+                <div class="info_box">
+                    <label class="info_label">Formato:</label>
+                    <label class="info_label_text" id="format_info"></label>
+                </div>
+                <div class="info_box">
+                    <label class="info_label">Publicado em:</label>
+                    <label class="info_label_text" id="date_info"></label>
+                </div>
+                <div class="info_box">
+                    <label class="info_label">Link do video:</label>
+                    <label class="info_label_text" id="url_info"></label>
+                </div>
+                <div class="info_box description">
+                    <label class="info_label">Descrição:</label>
+                    <textarea cols="30" rows="10" id="description_info"></textarea>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <!--DIVS POSITION ABSOLUTE-->
+        <div class="download_percent">
+            <div class="percent_box">
+                <div class="loading_gif">
+                    <img src="../img/download.gif" id="loading_image">
+                </div>
+                <div class="text_loading">Download em progresso...</div>
+            </div>
+        </div>
+
+        <div class="mensage_error">
+            <div class="mensage_box">
+                <div class="mensage_alert">Mensagem do Sistema</div>
+                <div class="mensage_text">
+                    O FORMATO e o LINK devem ser informados!
+                </div>
+                <div class="mensage_button">
+                    <button class="mensage_ok">OK</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>

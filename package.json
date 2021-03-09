@@ -1,0 +1,23 @@
+{
+  "name": "youtubedownload",
+  "version": "1.0.0",
+  "description": "Software para baixar audios e videos do youtube",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllanScala1991/YoutubeDownload.git"
+  },
+  "author": "Allan Scala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllanScala1991/YoutubeDownload/issues"
+  },
+  "homepage": "https://github.com/AllanScala1991/YoutubeDownload#readme",
+  "dependencies": {
+    "electron": "^9.0.3",
+    "ytdl-core": "^4.5.0"
+  }
+}
