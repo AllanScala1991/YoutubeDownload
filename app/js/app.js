@@ -32,8 +32,9 @@ document.querySelector(".format").addEventListener("change", () => {
 // BOTAO DE DOWNLOAD
 document.querySelector("#btn_download").onclick = () => {
     let url = document.querySelector("#video_url").value;
+    let get_path = document.querySelector(".path_input").value;
 
-    if(url && format != "error"){
+    if(url && format != "error" && get_path){
         Download(url, format);
     }else {
         document.querySelector(".mensage_error").style.zIndex = "999";
