@@ -38,5 +38,5 @@ app.on('window-all-closed', function () {
 
 
 
-//electron-packager . --platform=win32  --archi=ia32 --icon="C:\Users\Allan Scala\Documents\Application\app\img\banknotes-32.ico"
-//electron-packager . --platform=darwin  --arch=x64 --icon="/Users/admin/Documents/Projetos/my-money-application/app/img/moneybox-32.icns"
+//electron-packager . --platform=win32  --archi=ia32 --icon="/Users/allanscala/Documents/YoutubeDownload/youtube-3-32.ico"
+//electron-packager . --platform=darwin  --arch=x64 --icon="/Users/allanscala/Documents/YoutubeDownload/youtube-3-32.icns"
